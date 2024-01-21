@@ -58,7 +58,7 @@ def exchangeable_value(budget, exchange_rate, spread, denomination):
     actual_exchange_rate = exchange_rate * (1 + spread_decimal)
 
     # Calculate the maximum value in terms of the bills
-    max_value = (budget / actual_exchange_rate)
+    max_value = budget / actual_exchange_rate
     max_number_of_bills = int(max_value / denomination)
 
     return max_number_of_bills * denomination
